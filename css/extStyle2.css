@@ -1,0 +1,291 @@
+:root {
+    --navbackgroundcolor1: rgba(31, 9, 49, 0);
+    --navbackgroundcolor: rgb(114, 0, 167, 1);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+html{
+    background-color: rgb(12, 1, 31);
+    background-color: black;
+    background-image: url("horizontal3.png");
+}
+
+.first{
+    color: rgb(114, 0, 167, 0);
+}
+
+.hi{
+    display: inline;
+    text-align: left;
+    float: left;
+    font-size: calc(16px + 3vw);
+    margin-left: 6%;
+    color: rgb(236, 236, 236);
+}
+
+.start{
+    margin-top: 50%;
+}
+
+#grad{
+    display: inline;
+    float: right;
+    margin-top: 4%;
+    margin-right: 2%;
+    min-width: 300px;
+}
+
+#bio{
+    display: inline-block;
+    font-size: calc(10px + 1vw);
+    margin-left: 40%;
+    margin-right: 4%;
+    float: right;
+    z-index: 5;
+}
+
+#swiss{
+    display: inline-block;
+    float: left;
+    margin-top: -16%;
+    margin-left: 2%;
+    min-width: 100px;
+    z-index: 4;
+}
+
+#portlink{
+    display: inline;
+    float: left;
+    margin-left: -10%;
+    margin-top: 6%;
+    min-width: 100px;
+}
+
+h1{
+    color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+    color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4{
+    color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h5{
+    color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h6{
+    color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color:rgb(255, 255, 255)
+}
+
+p{
+    color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*navbar styling below*/
+header{
+    /*background-color: rgb(31, 9, 49);*/
+    background-color: var(--navbackgroundcolor);
+    margin-top: -21px;
+    margin-left: -5px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    height: 8%;
+    max-height: 70px;
+    min-height: 30px;
+}
+
+.logo{
+    position: relative;
+    margin-top: 0.5%;
+    width: auto;
+    height: 80%;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative; 
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::after {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::before {
+    top: 7px;
+}
+
+nav{
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--navbackgroundcolor);
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 250ms ease-in-out;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-transform:  uppercase;
+    font-weight: bold;
+    opacity: 0;
+    transition:  opacity 100ms ease-in-out;
+}
+
+nav a:hover{
+ color:rgb(0, 158, 197);
+}
+
+.nav-toggle:checked ~ nav {
+    transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a{
+    opacity: 1;
+    transition:  opacity 250ms ease-in-out 200ms;
+}
+
+@media screen and (max-width: 950px){
+    #swiss{
+        display: none;
+    } 
+    #portlink{
+        display: none;
+    }    
+}
+
+@media screen and (min-width: 950px) {
+    .nav-toggle-label{
+        display: none;
+    }
+
+    header {
+        position: fixed;
+        margin-top: -21px;
+        margin-left: -5px;
+        height: 12%;
+        display: grid;
+        min-height: 80px;
+        grid-template-columns: 1fr auto minmax(600, 3fr) 1fr;
+    }
+
+    .logo {
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 8px;
+        width: auto;
+        height: 100%
+    }
+    nav {
+        all: unset;
+        grid-column: 3/4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav a {
+        color: white;
+        opacity: 1;
+        position: relative;
+    }
+
+    nav ul {
+        margin-right: 10%;
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+
+    nav li {
+        margin-left: 3em;
+        margin-bottom: 0;
+        margin-right: 10%;
+    }
+
+    nav a::before {
+        opacity: 1;
+        content: '';
+        display: block;
+        height: 3px;
+        background: rgb(0, 158, 197);
+        position: absolute;
+        top: 1.5em;
+        left: 2%;
+        right: 0;
+        transform: scale(0,1);
+        transition: transform ease-in-out 200ms;
+    }
+
+    nav a:hover::before{
+        transform: scale(1, 1);
+    }
+}
