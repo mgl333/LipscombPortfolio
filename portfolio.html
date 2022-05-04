@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang = "en">
-<head> 
-    <meta charset="UTF-8">
-    <title>Lipscomb Portfolio</title>
-    <link rel="stylesheet" href="css/extStyle.css">
-</head>
-<body>
-    <header>
-        <a href = "index.html">Home</a>
-        <a href = "portfolio.html">Portfolio</a>
-        <a href = "resume.html">Resume</a>
-        <a href = "contact.html">Contact</a>
-        <h1>!!! Update April 28, 2022:</h1>
-        <h2>
-            This site is currently being updated. These pages are all just plain HTML, 
-            and are just place holders as I work on making my website look more professionally styled. 
-            The updated version of my website should be completed by May 2, 2022. Thank you
-        </h2>
-    </header>
+    <head> 
+        <meta charset="UTF-8">
+        <title>Lipscomb Portfolio</title>
+        <link rel="icon" href="imgs/my logo tab bar.png">
+        <link rel="stylesheet" href="css/extStyle3.css">
+    </head>
+    <body>
+        <header>
+            <img src="imgs/my logo.png" alt="my personal logo" class="logo">
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav>
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "portfolio.html">Portfolio</a></li>
+                    <li><a href = "resume.html">Resume</a></li>
+                    <li><a href = "contact.html">Contact</a></li>
+                </ul>    
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+        </header>
     <main>
-        <br>
-        <br>
-        <h1>Projects (Many more will be added when I update the site on May 2nd)</h1>
-        <br>
-        <h2>Currently in Development</h2>
+        <h1 class="first">
+            _
+        </h1>
+        <h1 class="contact">Projects</h1>
+        <!--<h2>Currently in Development</h2>
         <br>
         <h3>Card Counting Trainer Website</h3>
         <h4>Type: Individually Developed Website Created Using the Flask Micro-Framework, Python, JS, HTML5, and CSS3</h4>
@@ -65,7 +69,24 @@
             The app will recommend changes to the user's bracket to improve their odds of getting a perfect bracket.   
             This project is still in development. The finished project will be available in time for next years tournameny!  
         </p>
-        <br>
+        <br>-->
+        <h2>still editing this page shoud be done later today</h2>
+        <h2>2022</h2>
+        <h3>The Perfect Bracket Project</h3>
+        <h4>Type: Individually Developed Java Application</h4>
+        <h5>Description:</h5>
+        <p>
+            The goal of this project was to calculate the approximate odds of getting a perfect "March Madness" bracket given that you are perfectly informed when filling out your bracket. 
+            The theoretical odds of getting a perfect bracket are ~1 in 9.2 Quintillion. This is because there are 9.2 quintillion possible ways to fill out a 64 team bracket. 
+            However, since the outcome of each game is not random, an informed individual has significantly better odds of getting a perfect bracket, 
+            but previously no one had ever attempted to calculate the odds of an "informed individual" picking a perfect bracket.
+            <br>
+            To calculate the odds, I looked at every bracket since 1985, and calcuated the percent of games that were upsets for each seeding match-up given the tournament history.
+            I then simualted tournaments based on these calculated upset percentages until one was an exact match for a randomly chosen target bracket which was picked from a set of real brackets that happened from 1985-2021.
+            After repeating this process thousands of times, I used the average number of simulations it took to get a perfect bracket to calculate the approximate odds.
+            I was able to get the odds to as low as ~1 in 100 Billion which is about 100 million times more likely than the theorectical odds. 
+            **I will soon be posting a video here going more in depth about this project.      
+        </p>
         <h2>2021</h2>
         <br>
         <h3>Godel's Incompleteness Theorem</h3>
@@ -74,7 +95,7 @@
       <!-- <video src = "vids/4510final.mp4" width = "60%" controls>
             Your browser does not support the <code>video</code> element.
         </video> -->
-        <p>video to be posted on the 5/2 update</p>
+        <p>video to be posted later today update</p>
         <br>
     </main>
     <footer>
