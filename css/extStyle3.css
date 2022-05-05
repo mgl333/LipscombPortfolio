@@ -47,6 +47,40 @@ html{
     color: rgba(255, 255, 255, 0);
 }
 
+.year{
+    margin-left: 5%;
+    font-size: calc(18px + 2.5vw);
+    text-decoration: underline;
+}
+
+.ProjectTitle {
+    margin-left: 7%;
+    font-size: calc(14px + 1.5vw);
+    text-decoration: underline;
+    line-height: 50%;
+}
+
+.type {
+    margin-left: 8%;
+    font-size: calc(12px + 1vw);
+    line-height: 50%;
+}
+
+.description {
+    margin-left: 8%;
+    font-size: calc(12px + 0.5vw);
+    line-height: 50%;
+}
+
+.des2 {
+    text-align: left;
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: calc(12px + 0.5vw);
+}
+
+
+
 h1{
     color:rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
