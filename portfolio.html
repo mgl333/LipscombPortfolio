@@ -92,11 +92,146 @@
         <h4 class="type">Type: Python Scripts</h4>
         <h5 class="description">Description:</h5>
         <p class="des2">
-            &emsp; Using AI and automation, I created multiple YouTube channels that scrape different social media platforms for content, then edits the content into one video, and then posts the videos. 
-            the goal of this project was to see if it was possible to create a 100% passive stream of income through fully automated YouTube channels.     
+            &emsp; Using AI and automation, I created multiple YouTube channels that are run entirley through automated programs that scrape different social media platforms for content, and then edits the content into one video, and then posts the videos. 
+            The goal of this project was to see if it was possible to create an absolutley passive stream of income through fully automated YouTube channels.     
         </p>
         <h2>&emsp;&emsp;&emsp;&emsp;***I have several projects currently in development! Check back later for more updates.***</h2>
         <h2 class = "year">2021</h2>
+        <h3 class="ProjectTitle">Path Networks (Game AI)</h3>
+        <h4 class="type">Type: Python Program.<br><br>&emsp;&emsp;Individual School Project</h4>
+        <figure class="fig">
+            <img src = "imgs/PathNetworkGif.gif" class="figimg" alt="Path Network GIF">
+        </figure>
+        <h5 class="description">Description:</h5>
+        <p class="des2">
+            &emsp;Using a game engine that was created by my professor, I was tasked with creating an algorithm that could draw a path network connecting preditermined path nodes, 
+            the path network was required to allow an AI agennt to traverese the game environment without running into obstacles and reach any point in the environment.
+            My solution involved drawing lines that connected each node to every other node, and then I erased all the lines that went through an obstacle. 
+        </p>
+        <br><br><br><br><br><br><br><br><br>
+        <h3 class="ProjectTitle">Finite State Machines <br><br> and A* Heuristic (Game AI)</h3>
+        <h4 class="type">Type: Python Program.<br><br>&emsp;&emsp;Individual School Project</h4>
+        <figure class="fig">
+            <img src = "imgs/FsmGif.gif" class="figimg" alt="Finite State Machine GIF">
+        </figure>
+        <h5 class="description">Description:</h5>
+        <p class="des2">
+            &emsp;Using the same game engine as in the above project, 
+            I was tasked with implementing the A* Heuristic Algorithm to allow AI agents to 
+            efficiently navigate an environment using my previously implemented path network setup.
+            Additionally, I implemnted decision making for the AI agents to attack enemies and an enemy base.
+            The decision making was implemnted using a Finite State Machine.
+            <br>
+            &emsp; Most of my agents (green) will take the shortest path unblocked path to the enemy base while 
+            attacking any enemies that come into range along the way. Once my agents get in range of the enemy turrets, 
+            they will then attack the turrets which need to be destroyed before the base can take damage. 
+            If both turrets are destroyed my agent will then attack the base. Additionally, some of my agents 
+            will stay along the path and near my base to attack any enemies that attempt to reach my base.  
+        </p>
+        <br><br><br><br><br><br><br><br><br>
+        <h3 class="ProjectTitle">Behavior Trees (Game AI)</h3>
+        <h4 class="type">Type: Python Program.<br><br>&emsp;&emsp;Individual School Project</h4>
+        <figure class="fig">
+            <img src = "imgs/BeTreeGif.gif" class="figimg" alt="Behavior Tree GIF">
+        </figure>
+        <h5 class="description">Description:</h5>
+        <p class="des2">
+            &emsp;Using the same game engine as in the above projects, 
+            I was tasked with implementing Behavior Trees that would dictate how a special type of AI agent 
+            operates within the game environment. For this assignment, each team in the game had a "Hero" agent
+            that was more ppowerful than the regular agents. The "Hero" agent had multiple types of attacks, 
+            could dodge bullets, got more powerful with each enemy it eliminated, and could heal at it's own base.
+            Each team had the same AI controlling the normal minion agents, so the difference in the "Hero" agents AI
+            would be the only thing that seperates the two teams. 
+            <br>
+            &emsp; Describing in detail the Behavior Tree I created to control my "Hero" agent would be impossible 
+            to do in a single paragraph, but in short, my agent (green with yellow head) prioritized running directly at the enemies "Hero" 
+            and then retreating to its own base to heal while still firing at the enemy. My implementation was among 
+            the best in the class and was even capable of beating the professor's implementation.       
+        </p>
+        <br><br><br><br><br><br><br><br><br>
+        <h3 class="ProjectTitle">Unity Museum</h3>
+        <h4 class="type">Type: Unity Project<br><br>&emsp;&emsp;Group School Project
+            <br><br><br><br>
+            Total Individual Dev Time:
+            <br><br>&emsp;&emsp;~12hrs
+        </h4>
+        <figure class="fig">
+            <img src = "imgs/unity1.png" class="figimg2" alt="Unity Museum">
+            <img src = "imgs/unity2.png" class="figimg2" alt="Unity Television">
+        </figure>
+        <h5 class="description">Description:</h5>
+        <p class="des2">
+            &emsp;For this project, I, along with a group of other students, created a technology museum in Unity.
+            The museum showed off the different technologies from different decades. We had a room for 2000's, the 2010's, and the 2020's. 
+            Each room showcased popular TVs, computers, gaming consoles, phones, and music players for each decade.
+            For this project I was responsible for modeling the 2000's room, the Televisions for each decade, and making the TVs interactive.
+            <br>&emsp;To model the TVs, I used Maya and then imported the models into Unity. I then implemented 
+            C# code to allow the user to turn on the TV's and change the channels.     
+        </p>
+        <h3 class="ProjectTitle">Covid 19</h3>
+        <h4 class="type">Type: Menu Game <br><br><br>&emsp;&emsp;Created in GameMaker Studio 
+            <br><br><br>&emsp;&emsp;Individual School Project
+            <br><br><br><br>
+            Total Individual Dev Time:
+            <br><br>&emsp;&emsp;~20hrs
+        </h4>
+        <figure class="fig">
+            <img src = "imgs/CovSim.png" class="figimg2" alt="Covid Sim">
+            <img src = "imgs/CovSim2.png" class="figimg2" alt="Covid Sim">
+        </figure>
+        <h5 class="description">Description:</h5>
+        <p class="des2">
+            &emsp;This was a menu style game that was meant to let the player take the role of President of the 
+            United States during the Covid-19 Pandemic. The goal of the player was to mimize the number of deaths
+            and infections due to Covid-19. The game incorporated large amounts of real world data to simulate 
+            the pandemic as accuratley as possible. The player had the ability to spend government money,
+            issue executive orders, and make congressional requests to do several different things that could 
+            potentially impact the pandemic. The player also had an approval rating that would change depending on
+            how the pandemic was going and the actions they took. The lower the approval rating, the higher the 
+            chances were of the population ignoring their orders, or congress ignoring their requests. 
+            <br>&emsp;Because the allowed development time for this project was so short, and I already had 
+            to spend much of it doing research, I decided to forgo any attempt at making graphical components, 
+            and just focused on making the simulation aspect of the game as fleshed out as possible. The game was
+            created using a combonation of GameMaker Studio and Java code. 
+        </p>
+        <br><br>
+        <h2 class = "year">2020</h2>
+        <h3 class="ProjectTitle">Mobile Shopping App</h3>
+        <h4 class="type">Type: React Native Mobile App <br><br>&emsp;&emsp;Group School Project
+            <br><br><br><br>
+            Total Dev Time:
+            <br><br>&emsp;&emsp;~5 Months</h4>
+        <figure class="fig">
+            <img src = "imgs/AppScreens.png" class="figimg" alt="App Screens">
+        </figure>
+        <h5 class="description">Description:</h5>
+        <p class="des2">
+            &emsp;This was my Junior Design project. The purpose of the project was emulate Industry Development
+            using AGILE/SCRUM methodologies. As a group, we were assigned a client and we're responsible for the
+            full development of the clients product. Our client wanted to build a mobile app that would allow 
+            in store shoppers to scan items and pay directly from their phone.
+            &emsp;For this project I was involved with writing user stories, carrying out user testing, planning development sprints,
+            UI design, and Front-end development. The UI prototypes were created using Figma and the Front-end Develpment was done using 
+            JavaScript and React Native. I was solely responsible for the Front-end development of multple screens within the app. 
+            &emsp;The final product was well recieved by both our client and professors. We were also given an award for best design.   
+        </p>
+        <br><br>
+        <h3 class="ProjectTitle">Police Transparency Project</h3>
+        <h4 class="type">Type: UI Prototype<br><br>&emsp;&emsp;Group School Project
+        <figure class="fig">
+            <img src = "imgs/police.png" class="figimg3" alt="Website Screens">
+        </figure>
+        <h5 class="description">Description:</h5>
+        <p class="des2">
+            &emsp;For this project, my group created a mock website using Figma. We created a protype for the UI,
+             as well as prototypes for each individual page of the site. I was resposible for the creation of multple 
+             idivual screens.
+        </p>
+
+
+
+
     </main>
     <footer>
     </footer>
