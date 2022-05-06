@@ -79,7 +79,30 @@ html{
     font-size: calc(12px + 0.5vw);
 }
 
+.fig {
+    width: 50%;
+    float: right;
+    margin-bottom: 6%;
+}
 
+.figimg {
+    width:100%;
+    max-width: 800px;
+    float: right;
+    margin-right: 5%;
+    margin-top: -6%;
+}
+.figimg2 {
+    width: 49%;
+    max-width: 500px;
+}
+
+.figimg3 {
+    width:115%;
+    max-width: 1200px;
+    float: left;
+    margin-left: -3%;
+}
 
 h1{
     color:rgb(255, 255, 255);
